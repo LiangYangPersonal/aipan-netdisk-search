@@ -1,11 +1,5 @@
 [
   {
-    "api": "/api/sources/aipan-search"
-  },
-  {
-    "api": "/api/sources/aipan-data-search"
-  },
-  {
     "api": "/api/sources/external-pan"
   },
   {
