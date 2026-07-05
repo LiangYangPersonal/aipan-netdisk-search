@@ -87,7 +87,7 @@ onMounted(async () => {
           v-for="(movie, index) in item.data" :key="index" type="info" @click="goDouban(movie)">
           <img
             class="w-full h-[180px] lg:h-[220px] xl:h-44 rounded-[5px] object-cover transition-transform duration-300 hover:scale-105"
-            :src="'https://images.weserv.nl/?url=' + movie.cover" alt="" referrerpolicy="never">
+            :src="'/api/img?url=' + encodeURIComponent(movie.cover)" alt="">
           <p class="mt-1  text-center truncate font-normal">
             {{ movie.title }}
             {{ movie.rate }}
